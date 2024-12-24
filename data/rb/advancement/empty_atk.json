@@ -1,0 +1,16 @@
+{
+    "criteria": {
+        "atk_empty": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "interaction",
+                    "nbt": "{Tags:[\"rb_detector\"]}"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "rb:private/atk/empty_atk"
+    }
+}
