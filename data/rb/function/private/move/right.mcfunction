@@ -1,6 +1,6 @@
 #check cd
 execute if score @s rb_movecd matches ..0 run return -1
-scoreboard players set @s rb_movecd -2
+scoreboard players set @s rb_movecd -3
 
 #check facing & move
 kill @n[type=interaction,tag=rb_detector,distance=..1]

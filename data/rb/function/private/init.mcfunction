@@ -21,6 +21,9 @@ scoreboard objectives add rb_death custom:deaths
 scoreboard objectives add rb_death_revive custom:time_since_death
 scoreboard objectives add rb_movecd custom:time_since_death
 
+scoreboard objectives add rb_input_count dummy
+scoreboard objectives add rb_input_combo dummy
+
 team add player
 team modify player collisionRule never
 team modify player friendlyFire false

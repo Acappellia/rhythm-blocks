@@ -1,0 +1,1 @@
+execute as @a[tag=rb_ingame,scores={rb_input_count=0}] run function rb:private/hit/miss

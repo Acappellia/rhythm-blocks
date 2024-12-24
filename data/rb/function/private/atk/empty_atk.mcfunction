@@ -1,3 +1,3 @@
 advancement revoke @s only rb:empty_atk
 
-tellraw @s "[rhythm-blocks] empty atk"
+function rb:private/hit/miss

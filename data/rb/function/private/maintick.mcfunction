@@ -8,3 +8,6 @@ execute unless score #rb_game rb matches 1 as @a[scores={rb_rejoin=1..}] at @s a
 
 #ingame tick
 execute if score #rb_game rb matches 1 as @a[tag=rb_ingame] run function rb:private/player_tick
+
+#rhythm tick
+execute if score #rb_game rb matches 1 run function rb:private/rhythm/tick

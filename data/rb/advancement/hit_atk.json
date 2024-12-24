@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "atk_empty": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "#rb:hostile"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "rb:private/atk/hit_atk"
+    }
+}
