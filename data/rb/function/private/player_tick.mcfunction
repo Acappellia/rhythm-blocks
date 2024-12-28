@@ -1,3 +1,9 @@
+#effect
+effect give @s saturation infinite 0 true
+
+#gamemode
+gamemode adventure @s[gamemode=survival]
+
 #check movement
 execute if predicate rb:move_forward at @s run function rb:private/move/forward
 execute if predicate rb:move_backward at @s run function rb:private/move/backward

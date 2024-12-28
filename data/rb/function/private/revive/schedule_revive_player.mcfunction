@@ -1,0 +1,1 @@
+execute as @e[type=item_display,tag=grave,scores={rb_revive_counter=10..}] at @s run function rb:private/revive/revive_player

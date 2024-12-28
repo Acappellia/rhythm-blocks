@@ -1,0 +1,1 @@
+execute as @e[type=item_display,tag=grave] if score @s rb_pid = @p[tag=in_grave] rb_pid run tp @p[tag=in_grave] @s
