@@ -1,4 +1,4 @@
-setblock ~ ~ ~ minecraft:cobbleiron_wall[east=low,north=none,south=none,up=true,waterlogged=false,west=low]
+setblock ~ ~ ~ minecraft:cobblestone_wall[east=low,north=none,south=none,up=true,waterlogged=false,west=low]
 setblock ~ ~1 ~ player_head[rotation=8]
 
 setblock 0 -64 0 bedrock
