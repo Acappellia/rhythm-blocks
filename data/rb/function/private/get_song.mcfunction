@@ -24,7 +24,7 @@ scoreboard players set #song_notes rb 1000
 execute if score #song_select rb matches 2 run scoreboard players set #interval rb 10
 execute if score #song_select rb matches 2 run tick rate 28.6666
 scoreboard players set #mob_level rb 1
-scoreboard players set #song_notes rb 1000
+scoreboard players set #song_notes rb 199
 
 #我会自己上厕所 108bpm
 #easy
