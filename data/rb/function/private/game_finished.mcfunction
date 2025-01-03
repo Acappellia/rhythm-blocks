@@ -11,7 +11,6 @@ execute as @e[type=item_display,tag=grave] at @s run function rb:private/revive/
 
 tellraw @a "[rhythm-blocks] STAGE CLEAR!"
 
-stopsound @a record
 kill @e[tag=rb_mob]
 tick rate 20
 
