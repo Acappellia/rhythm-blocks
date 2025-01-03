@@ -1,4 +1,4 @@
-#gamerule doDaylightCycle false
+gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule mobGriefing false
 gamerule doMobSpawning false
@@ -19,6 +19,7 @@ gamerule doImmediateRespawn false
 difficulty easy
 
 forceload add 0 0 0 0
+time set 13500
 
 scoreboard objectives add rb dummy
 execute unless score #rb_pid rb matches 0.. run scoreboard players set #rb_pid rb 0

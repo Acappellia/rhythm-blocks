@@ -9,7 +9,10 @@ tag @a remove in_grave
 
 execute as @e[type=item_display,tag=grave] at @s run function rb:private/revive/remove_grave
 
-tellraw @a "[rhythm-blocks] STAGE CLEAR!"
+tellraw @a "[Rhythm Master] STAGE CLEAR!"
+tellraw @a [{"text": "本场个人数据： ","color": "gray"},{"text": "击败怪物得分 - ","color": "white"},{"score": {"name": "*","objective": "rb_stage_score"},"color": "yellow"}\
+,{"text": " 最高连击数 - ","color": "white"},{"score": {"name": "*","objective": "rb_stage_maxcombo"},"color": "yellow"}\
+,{"text": " 死亡数 - ","color": "white"},{"score": {"name": "*","objective": "rb_stage_death"},"color": "yellow"}]
 
 kill @e[tag=rb_mob]
 tick rate 20

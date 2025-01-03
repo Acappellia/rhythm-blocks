@@ -9,7 +9,7 @@ tag @a remove in_grave
 
 execute as @e[type=item_display,tag=grave] at @s run function rb:private/revive/remove_grave
 
-tellraw @a "[rhythm-blocks] Game stop"
+tellraw @a "[Rhythm Master] Game stop"
 
 stopsound @a record
 kill @e[tag=rb_mob]

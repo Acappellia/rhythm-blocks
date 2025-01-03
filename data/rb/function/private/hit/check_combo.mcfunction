@@ -1,3 +1,5 @@
+execute if score @s rb_input_combo > @s rb_stage_maxcombo run scoreboard players operation @s rb_stage_maxcombo = @s rb_input_combo
+
 execute if score @s rb_input_combo matches 10 run return run function rb:private/hit/combo_10
 execute if score @s rb_input_combo matches 20 run return run function rb:private/hit/combo_20
 execute if score @s rb_input_combo matches 30 run return run function rb:private/hit/combo_30

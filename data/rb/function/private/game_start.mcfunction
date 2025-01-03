@@ -13,17 +13,22 @@ execute as @e[type=item_display,tag=grave] at @s run function rb:private/revive/
 scoreboard players set #rb_tick rb 10
 scoreboard players set #rb_note_schedule rb -5
 
-tellraw @a "[rhythm-blocks] Game start"
+tellraw @a "[Rhythm Master] Game start"
 
 kill @e[tag=rb_mob]
+
+scoreboard objectives remove rb_stage_maxcombo
+scoreboard objectives add rb_stage_maxcombo dummy "最大连击排行"
+scoreboard players set @a rb_stage_maxcombo 0
 
 scoreboard objectives remove rb_stage_score
 scoreboard objectives add rb_stage_score totalKillCount "得分排行"
 scoreboard objectives setdisplay sidebar rb_stage_score
 
+scoreboard objectives remove rb_stage_death
+scoreboard objectives add rb_stage_death deathCount "死亡排行"
+scoreboard players set @a rb_stage_death 0
+
 #TODO TP
 
 function rb:private/rhythm/note_cd_5
-
-##debug
-time set 0
