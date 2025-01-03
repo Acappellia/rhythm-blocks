@@ -1,6 +1,7 @@
 title @a times 0 15 5
-title @a title "GO!" 
+title @a title [{"text": "= ","color": "#ffed7b"},{"text": "GO!","color": "#acff78"},{"text": " =","color": "#ffed7b"}]
 
+scoreboard players set @a rb_input_count 0
 xp set @a 28 levels
 xp set @a 101 points
 xp set @a 0 levels

@@ -12,6 +12,7 @@ execute as @e[type=item_display,tag=grave] at @s run function rb:private/revive/
 tellraw @a "[rhythm-blocks] Game stop"
 
 kill @e[tag=rb_mob]
+execute at @a run summon firework_rocket ~ ~ ~ {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"star",has_twinkle:true,colors:[I;13958912,16750848]}]}}}}
 
 gamemode adventure @a[gamemode=!creative]
 #TODO TP

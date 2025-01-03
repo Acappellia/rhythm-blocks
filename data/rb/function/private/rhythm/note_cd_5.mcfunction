@@ -1,5 +1,5 @@
 title @a times 0 15 5
-title @a title "GET" 
+title @a title [{"text": "= ","color": "white"},{"text": "GET","color": "#fbffc0"},{"text": " =","color": "white"}]
 
 execute as @a at @s run playsound block.note_block.snare block @s ~ ~ ~ 0.3 2
 

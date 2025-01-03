@@ -7,7 +7,8 @@ scoreboard players operation #player_counts rb *= #mobs_per_player rb
 
 execute if score #active_mobs rb >= #player_counts rb run return -1
 
-execute store result score #summon_result rb run random value 0..15
-execute if score #summon_result rb matches 0..10 positioned 0 319 0 summon zombie run return run function rb:private/summon/summon_mob
-execute if score #summon_result rb matches 11..13 positioned 0 319 0 summon spider run return run function rb:private/summon/summon_mob
-execute if score #summon_result rb matches 14..15 positioned 0 319 0 summon vindicator run return run function rb:private/summon/summon_mob
+execute unless score #mob_level rb matches 1..4 run function rb:private/summon/easy
+execute if score #mob_level rb matches 1 run function rb:private/summon/easy2
+execute if score #mob_level rb matches 2 run function rb:private/summon/medium
+execute if score #mob_level rb matches 3 run function rb:private/summon/medium2
+execute if score #mob_level rb matches 4 run function rb:private/summon/hard
