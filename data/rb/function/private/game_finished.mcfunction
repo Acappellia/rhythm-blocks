@@ -35,3 +35,11 @@ schedule clear rb:private/rhythm/note_loop_a
 schedule clear rb:private/rhythm/note_loop_b
 schedule clear rb:private/rhythm/note_loop_c
 schedule clear rb:private/rhythm/note_loop_d
+
+schedule clear rb:private/schedule_start/1
+schedule clear rb:private/schedule_start/2
+schedule clear rb:private/schedule_start/3
+schedule clear rb:private/schedule_start/4
+schedule clear rb:private/schedule_start/5
+schedule clear rb:private/schedule_start/6
+schedule clear rb:private/game_start
