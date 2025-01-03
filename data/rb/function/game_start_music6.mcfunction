@@ -1,4 +1,4 @@
 scoreboard players set #song_select rb 6
-execute at @a run playsound rb:music.unwelcome_school record @s ~ ~ ~ 1 1 1
+execute at @a run playsound rb:music.unwelcome_school record @s ~ ~ ~ 0.8 1 0.8
 function rb:private/game_setup
-schedule function rb:private/game_start 306t replace
+schedule function rb:private/game_start 305t replace

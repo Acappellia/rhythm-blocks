@@ -16,6 +16,7 @@ gamerule doEntityDrops false
 gamerule doTileDrops false
 
 gamerule doImmediateRespawn false
+difficulty easy
 
 forceload add 0 0 0 0
 

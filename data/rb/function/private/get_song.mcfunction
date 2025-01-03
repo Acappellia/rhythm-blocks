@@ -17,28 +17,28 @@ execute if score #song_select rb matches 2 run scoreboard players set #song_note
 execute if score #song_select rb matches 3 run scoreboard players set #interval rb 10
 execute if score #song_select rb matches 3 run tick rate 28.3333
 execute if score #song_select rb matches 3 run scoreboard players set #mob_level rb 2
-execute if score #song_select rb matches 3 run scoreboard players set #song_notes rb 1000
+execute if score #song_select rb matches 3 run scoreboard players set #song_notes rb 187
 
 #Brainiac Maniac 120bpm
 #medium 2
 execute if score #song_select rb matches 4 run scoreboard players set #interval rb 5
 execute if score #song_select rb matches 4 run tick rate 20
 execute if score #song_select rb matches 4 run scoreboard players set #mob_level rb 3
-execute if score #song_select rb matches 4 run scoreboard players set #song_notes rb 1000
+execute if score #song_select rb matches 4 run scoreboard players set #song_notes rb 183
 
 #Time Window 131bpm
 #hard
 execute if score #song_select rb matches 5 run scoreboard players set #interval rb 5
 execute if score #song_select rb matches 5 run tick rate 21.8333
 execute if score #song_select rb matches 5 run scoreboard players set #mob_level rb 4
-execute if score #song_select rb matches 5 run scoreboard players set #song_notes rb 1000
+execute if score #song_select rb matches 5 run scoreboard players set #song_notes rb 279
 
 #Unwelcome School 180bpm
 #very hard
 execute if score #song_select rb matches 6 run scoreboard players set #interval rb 5
 execute if score #song_select rb matches 6 run tick rate 30
 execute if score #song_select rb matches 6 run scoreboard players set #mob_level rb 4
-execute if score #song_select rb matches 6 run scoreboard players set #song_notes rb 1000
+execute if score #song_select rb matches 6 run scoreboard players set #song_notes rb 319
 
 ##calc bpm (10 interval)
 # x bpm
