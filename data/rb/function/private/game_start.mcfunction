@@ -20,3 +20,6 @@ kill @e[tag=rb_mob]
 #TODO TP
 
 function rb:private/rhythm/note_cd_5
+
+##debug
+time set 0

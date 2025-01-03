@@ -1,4 +1,4 @@
-gamerule doDaylightCycle false
+#gamerule doDaylightCycle false
 gamerule doWeatherCycle false
 gamerule mobGriefing false
 gamerule doMobSpawning false
