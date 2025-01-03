@@ -8,7 +8,7 @@
                 "type": "#rb:hostile",
                 "distance": {
                     "absolute": {
-                        "max": 4
+                        "max": 4.5
                     }
                 }
             }

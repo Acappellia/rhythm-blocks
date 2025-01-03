@@ -9,12 +9,16 @@ tag @a remove in_grave
 
 execute as @e[type=item_display,tag=grave] at @s run function rb:private/revive/remove_grave
 
-tellraw @a "[rhythm-blocks] Game stop"
+tellraw @a "[rhythm-blocks] STAGE CLEAR!"
 
 stopsound @a record
 kill @e[tag=rb_mob]
+
+title @a times 3 20 5
+title @a title [{"text": "STAGE CLEAR!","color": "#e69aff"}]
+
+execute at @a run summon firework_rocket ~ ~ ~ {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"star",has_twinkle:true,colors:[I;13958912,16750848]}]}}}}
 bossbar set party_timer visible false
-tick rate 20
 
 gamemode adventure @a[gamemode=!creative]
 #TODO TP
