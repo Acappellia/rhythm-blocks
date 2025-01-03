@@ -9,7 +9,7 @@ attribute @s jump_strength base set 0
 scoreboard players reset @s rb_rejoin
 scoreboard players reset @s rb_death
 clear @s
-give @s stone_sword[unbreakable={}] 1
+give @s iron_sword[unbreakable={}] 1
 team join player @s
 gamemode adventure
 effect give @s resistance 2 9 true

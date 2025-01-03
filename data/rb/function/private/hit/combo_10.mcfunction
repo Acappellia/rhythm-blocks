@@ -3,4 +3,4 @@ scoreboard players add @s +alt_health 2000
 execute at @s run playsound minecraft:entity.player.levelup player @s ~ ~ ~ 0.5 2
 
 clear @s #swords
-give @s iron_sword[unbreakable={}] 1
+give @s diamond_sword[unbreakable={}] 1
