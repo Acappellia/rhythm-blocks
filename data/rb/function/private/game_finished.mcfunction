@@ -13,6 +13,7 @@ tellraw @a "[rhythm-blocks] STAGE CLEAR!"
 
 stopsound @a record
 kill @e[tag=rb_mob]
+tick rate 20
 
 title @a times 3 20 5
 title @a title [{"text": "STAGE CLEAR!","color": "#e69aff"}]
