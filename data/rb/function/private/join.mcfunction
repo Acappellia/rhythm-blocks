@@ -13,3 +13,4 @@ give @s iron_sword[unbreakable={}] 1
 team join player @s
 gamemode adventure
 effect give @s resistance 2 9 true
+effect give @s saturation infinite 0 true
