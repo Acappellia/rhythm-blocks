@@ -17,7 +17,7 @@ execute if score #song_select rb matches 2 run scoreboard players set #song_note
 execute if score #song_select rb matches 3 run scoreboard players set #interval rb 10
 execute if score #song_select rb matches 3 run tick rate 28.3333
 execute if score #song_select rb matches 3 run scoreboard players set #mob_level rb 2
-execute if score #song_select rb matches 3 run scoreboard players set #song_notes rb 187
+execute if score #song_select rb matches 3 run scoreboard players set #song_notes rb 183
 
 #Brainiac Maniac 120bpm
 #medium 2
