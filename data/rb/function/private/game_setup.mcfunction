@@ -7,7 +7,7 @@ execute store result storage rb:tmp rhythm.interval int 1 run scoreboard players
 execute store result storage rb:tmp rhythm.prepare int 1 run scoreboard players remove #interval rb 3
 scoreboard players add #interval rb 3
 
-##set timer/
+##set timer
 execute unless score #song_notes rb matches 10.. run scoreboard players set #song_notes rb 100
 execute store result bossbar party_timer max run scoreboard players get #song_notes rb
 scoreboard players set #song_timer rb 0
