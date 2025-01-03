@@ -12,5 +12,5 @@ execute unless score #song_notes rb matches 10.. run scoreboard players set #son
 execute store result bossbar party_timer max run scoreboard players get #song_notes rb
 scoreboard players set #song_timer rb 0
 bossbar set party_timer value 0
-bossbar set party_timer visible true
+execute if score #show_bossbar rb matches 1 run bossbar set party_timer visible true
 bossbar set party_timer players @a

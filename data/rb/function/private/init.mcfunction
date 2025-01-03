@@ -23,9 +23,12 @@ time set 13500
 
 scoreboard objectives add rb dummy
 execute unless score #rb_pid rb matches 0.. run scoreboard players set #rb_pid rb 0
+
 execute unless score #mobs_per_player rb matches 1.. run scoreboard players set #mobs_per_player rb 2
 execute unless score #mob_level rb matches 0.. run scoreboard players set #mob_level rb 0
 execute unless score #song_select rb matches 0.. run scoreboard players set #song_select rb 1
+execute unless score #screen_effect rb matches 0.. run scoreboard players set #screen_effect rb 1
+execute unless score #show_bossbar rb matches 0.. run scoreboard players set #show_bossbar rb 1
 
 scoreboard objectives add rb_rejoin custom:leave_game
 scoreboard objectives add rb_death custom:deaths
