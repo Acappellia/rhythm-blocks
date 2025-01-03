@@ -45,7 +45,7 @@ team add player
 team modify player collisionRule never
 team modify player friendlyFire false
 
-bossbar add party_timer [{"text": "派对时间","color": "gold"}]
+bossbar add party_timer [{"text": "曲目进度","color": "gold"}]
 bossbar set party_timer visible false
 bossbar set party_timer color yellow
 bossbar set party_timer style notched_6
