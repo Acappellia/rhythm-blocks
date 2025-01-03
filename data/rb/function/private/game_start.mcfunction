@@ -17,6 +17,10 @@ tellraw @a "[rhythm-blocks] Game start"
 
 kill @e[tag=rb_mob]
 
+scoreboard objectives remove rb_stage_score
+scoreboard objectives add rb_stage_score totalKillCount "得分排行"
+scoreboard objectives setdisplay sidebar rb_stage_score
+
 #TODO TP
 
 function rb:private/rhythm/note_cd_5
