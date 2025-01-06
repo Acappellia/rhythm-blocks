@@ -36,6 +36,8 @@ execute if score #song_select rb matches 4..6 unless entity @e[type=#rb:boss,tag
 bossbar set party_timer visible false
 bossbar set boss_health visible false
 
+execute if score #song_select rb matches 4 unless entity @e[type=#rb:boss,tag=rb_boss] run schedule function rb:private/open_gate 40t replace
+
 kill @e[type=#rb:boss,tag=rb_boss]
 kill @e[type=item_display,tag=rb_boss_ride]
 
@@ -59,5 +61,3 @@ schedule clear rb:private/schedule_start/4
 schedule clear rb:private/schedule_start/5
 schedule clear rb:private/schedule_start/6
 schedule clear rb:private/game_start
-
-execute if score #song_select rb matches 4 run schedule function rb:private/open_gate 40t replace
