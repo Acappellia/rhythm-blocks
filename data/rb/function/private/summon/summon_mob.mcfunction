@@ -1,3 +1,4 @@
+attribute @s follow_range base set 48
 execute if score #song_select rb matches 1..2 run attribute @s movement_speed base set 0.10
 execute if score #song_select rb matches 3 run attribute @s movement_speed base set 0.12
 execute if score #song_select rb matches 4 run attribute @s movement_speed base set 0.15
