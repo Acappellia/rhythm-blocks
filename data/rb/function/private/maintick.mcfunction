@@ -15,3 +15,6 @@ execute if score #rb_game rb matches 1 run function rb:private/rhythm/tick
 execute if score #rb_game rb matches 1 as @a[scores={rb_death=1..},tag=!in_grave] at @s run function rb:private/revive/player_die
 execute if score #rb_game rb matches 1 as @a[tag=in_grave,scores={rb_death_revive=1}] at @s run function rb:private/revive/player_click_respawn
 execute if score #rb_game rb matches 1 run gamemode spectator @a[tag=in_grave]
+
+#boss prepare effect
+function rb:private/boss/summon_effect
