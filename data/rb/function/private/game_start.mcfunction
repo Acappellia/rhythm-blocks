@@ -28,11 +28,11 @@ scoreboard players set @a rb_stage_score 0
 #scoreboard objectives setdisplay sidebar rb_stage_score
 
 scoreboard objectives remove rb_stage_bosshit
-scoreboard objectives add rb_stage_bosshit totalKillCount "对boss造成攻击"
+scoreboard objectives add rb_stage_bosshit dummy "对boss造成攻击"
 scoreboard players set @a rb_stage_bosshit 0
 
 scoreboard objectives remove rb_stage_revive
-scoreboard objectives add rb_stage_revive totalKillCount "复活他人"
+scoreboard objectives add rb_stage_revive dummy "复活他人"
 scoreboard players set @a rb_stage_revive 0
 
 scoreboard objectives remove rb_stage_death

@@ -12,12 +12,12 @@ execute as @e[type=item_display,tag=grave] at @s run function rb:private/revive/
 
 tellraw @a "[Rhythm Master] STAGE FINISHED"
 
-execute if score #song_select rb matches 1..3 run tellraw @a [{"text": "本场个人数据： ","color": "gray"},{"text": "击败怪物得分-","color": "white"},{"score": {"name": "*","objective": "rb_stage_score"},"color": "yellow"}\
+execute if score #song_select rb matches 1..3 run tellraw @a [{"text": "本场个人数据： ","color": "gray"},{"text": "击败怪物-","color": "white"},{"score": {"name": "*","objective": "rb_stage_score"},"color": "yellow"}\
 ,{"text": " 最高连击数-","color": "white"},{"score": {"name": "*","objective": "rb_stage_maxcombo"},"color": "yellow"}\
 ,{"text": " 复活他人-","color": "white"},{"score": {"name": "*","objective": "rb_stage_revive"},"color": "yellow"}\
 ,{"text": " 死亡数-","color": "white"},{"score": {"name": "*","objective": "rb_stage_death"},"color": "yellow"}]
 
-execute if score #song_select rb matches 4.. run tellraw @a [{"text": "本场个人数据： ","color": "gray"},{"text": "击败怪物得分 - ","color": "white"},{"score": {"name": "*","objective": "rb_stage_score"},"color": "yellow"}\
+execute if score #song_select rb matches 4.. run tellraw @a [{"text": "本场个人数据： ","color": "gray"},{"text": "击败怪物- ","color": "white"},{"score": {"name": "*","objective": "rb_stage_score"},"color": "yellow"}\
 ,{"text": " 对boss造成攻击-","color": "white"},{"score": {"name": "*","objective": "rb_stage_bosshit"},"color": "yellow"}\
 ,{"text": " 最高连击数-","color": "white"},{"score": {"name": "*","objective": "rb_stage_maxcombo"},"color": "yellow"}\
 ,{"text": " 复活他人-","color": "white"},{"score": {"name": "*","objective": "rb_stage_revive"},"color": "yellow"}\
