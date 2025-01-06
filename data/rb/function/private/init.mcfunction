@@ -32,6 +32,7 @@ execute unless score #mob_level rb matches 0.. run scoreboard players set #mob_l
 execute unless score #song_select rb matches 0.. run scoreboard players set #song_select rb 1
 execute unless score #screen_effect rb matches 0.. run scoreboard players set #screen_effect rb 1
 execute unless score #show_bossbar rb matches 0.. run scoreboard players set #show_bossbar rb 1
+execute unless score #allow_double_move rb matches 0.. run scoreboard players set #allow_double_move rb 1
 
 scoreboard objectives add rb_rejoin custom:leave_game
 scoreboard objectives add rb_death custom:deaths
