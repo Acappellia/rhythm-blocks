@@ -5,6 +5,7 @@ schedule clear rb:private/schedule_start/4
 schedule clear rb:private/schedule_start/5
 schedule clear rb:private/schedule_start/6
 schedule clear rb:private/game_start
+function rb:private/close_gate
 
 stopsound @a record
 execute as @a at @s run playsound rb:music.shangcesuo record @s ~ ~ ~ 0 1 0

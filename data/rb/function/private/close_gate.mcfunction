@@ -1,0 +1,1 @@
+fill -4 60 -3 -2 60 -1 minecraft:chiseled_stone_bricks
