@@ -54,4 +54,9 @@ bossbar set party_timer visible false
 bossbar set party_timer color yellow
 bossbar set party_timer style notched_6
 
+bossbar add boss_health ""
+bossbar set boss_health visible false
+bossbar set boss_health color purple
+bossbar set boss_health style progress
+
 schedule function rb:private/20gt_tick 20t append

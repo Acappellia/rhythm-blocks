@@ -16,6 +16,7 @@ stopsound @a record
 kill @e[tag=rb_mob]
 kill @e[type=item_display,tag=rb_boss_ride]
 bossbar set party_timer visible false
+bossbar set boss_health visible false
 tick rate 20
 
 gamemode adventure @a[gamemode=!creative]

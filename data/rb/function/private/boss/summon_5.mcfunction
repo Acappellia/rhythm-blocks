@@ -4,4 +4,12 @@ execute positioned -3 -48 -2 run particle flame ~ ~1 ~ 0.5 0.5 0.5 0.5 50
 execute positioned -3 -48 -2 run particle flash ~ ~1 ~ 0 0 0 0 1
 execute positioned -3 -48 -2 run playsound entity.ender_dragon.shoot block @a ~ ~ ~ 1 0.5
 
+scoreboard players set #boss_health rb 150
+
+bossbar set boss_health name [{"text": "烈焰人"}]
+bossbar set boss_health max 150
+bossbar set boss_health value 150
+bossbar set boss_health visible true
+bossbar set boss_health players @a
+
 scoreboard players reset #skill_cd_1 rb

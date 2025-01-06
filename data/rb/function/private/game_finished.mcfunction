@@ -10,7 +10,7 @@ tag @a remove in_grave
 
 execute as @e[type=item_display,tag=grave] at @s run function rb:private/revive/remove_grave
 
-tellraw @a "[Rhythm Master] STAGE CLEAR!"
+tellraw @a "[Rhythm Master] STAGE FINISHED"
 
 execute if score #song_select rb matches 1..3 run tellraw @a [{"text": "本场个人数据： ","color": "gray"},{"text": "击败怪物得分-","color": "white"},{"score": {"name": "*","objective": "rb_stage_score"},"color": "yellow"}\
 ,{"text": " 最高连击数-","color": "white"},{"score": {"name": "*","objective": "rb_stage_maxcombo"},"color": "yellow"}\
@@ -28,10 +28,14 @@ kill @e[type=item_display,tag=rb_boss_ride]
 tick rate 20
 
 title @a times 3 20 5
-title @a title [{"text": "STAGE CLEAR!","color": "#e69aff"}]
+execute if score #song_select rb matches 1..3 run title @a title [{"text": "STAGE CLEAR!","color": "#e69aff"}]
+execute if score #song_select rb matches 4..6 if entity @e[type=#rb:boss,tag=rb_boss] run title @a title [{"text": "STAGE FAILED","color": "gray"}]
+execute if score #song_select rb matches 4..6 unless entity @e[type=#rb:boss,tag=rb_boss] run title @a title [{"text": "STAGE CLEAR!","color": "#e69aff"}]
 
-execute at @a run summon firework_rocket ~ ~ ~ {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"star",has_twinkle:true,colors:[I;13958912,16750848]}]}}}}
+execute if score #song_select rb matches 1..3 at @a run summon firework_rocket ~ ~ ~ {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"star",has_twinkle:true,colors:[I;13958912,16750848]}]}}}}
+execute if score #song_select rb matches 4..6 unless entity @e[type=#rb:boss,tag=rb_boss] at @a run summon firework_rocket ~ ~ ~ {LifeTime:20,FireworksItem:{id:"minecraft:firework_rocket",count:1,components:{"minecraft:fireworks":{explosions:[{shape:"star",has_twinkle:true,colors:[I;13958912,16750848]}]}}}}
 bossbar set party_timer visible false
+bossbar set boss_health visible false
 
 gamemode adventure @a[gamemode=!creative]
 #TODO TP
