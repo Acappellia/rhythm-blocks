@@ -1,0 +1,1 @@
+execute at @r[tag=rb_ingame] run summon evoker_fangs ~ ~ ~
