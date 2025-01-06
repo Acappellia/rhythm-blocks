@@ -20,3 +20,4 @@ execute if predicate rb:aiming_mob at @s run kill @n[type=interaction,tag=rb_det
 execute if score @s +health matches ..20000 run effect give @s resistance 1 0 true
 execute if score @s +health matches ..14000 run effect give @s resistance 1 1 true
 execute if score @s +health matches ..8000 run effect give @s resistance 1 2 true
+execute if score @s +health matches ..4000 run effect give @s resistance 1 3 true
