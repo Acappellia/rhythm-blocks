@@ -18,15 +18,24 @@ tellraw @a "[Rhythm Master] Game start"
 kill @e[tag=rb_mob]
 
 scoreboard objectives remove rb_stage_maxcombo
-scoreboard objectives add rb_stage_maxcombo dummy "最大连击排行"
+scoreboard objectives add rb_stage_maxcombo dummy "最大连击"
 scoreboard players set @a rb_stage_maxcombo 0
 
 scoreboard objectives remove rb_stage_score
-scoreboard objectives add rb_stage_score totalKillCount "得分排行"
-scoreboard objectives setdisplay sidebar rb_stage_score
+scoreboard objectives add rb_stage_score totalKillCount "消灭敌人"
+scoreboard players set @a rb_stage_maxcombo 0
+#scoreboard objectives setdisplay sidebar rb_stage_score
+
+scoreboard objectives remove rb_stage_bosshit
+scoreboard objectives add rb_stage_bosshit totalKillCount "对boss造成攻击"
+scoreboard players set @a rb_stage_maxcombo 0
+
+scoreboard objectives remove rb_stage_revive
+scoreboard objectives add rb_stage_revive totalKillCount "复活他人"
+scoreboard players set @a rb_stage_maxcombo 0
 
 scoreboard objectives remove rb_stage_death
-scoreboard objectives add rb_stage_death deathCount "死亡排行"
+scoreboard objectives add rb_stage_death deathCount "死亡"
 scoreboard players set @a rb_stage_death 0
 
 #TODO TP

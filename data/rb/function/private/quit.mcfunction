@@ -1,4 +1,5 @@
 tag @s remove rb_ingame
+attribute @s max_health base reset
 attribute @s attack_speed base reset
 attribute @s knockback_resistance base reset
 attribute @s entity_interaction_range base reset

@@ -1,0 +1,15 @@
+{
+    "criteria": {
+        "atk_empty": {
+            "trigger": "player_hurt_entity",
+            "conditions": {
+                "entity": {
+                    "type": "#rb:boss"
+                }
+            }
+        }
+    },
+    "rewards": {
+        "function": "rb:private/boss/hit"
+    }
+}
