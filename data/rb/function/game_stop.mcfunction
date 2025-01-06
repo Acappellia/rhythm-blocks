@@ -14,6 +14,8 @@ tellraw @a "[Rhythm Master] Game stop"
 
 stopsound @a record
 kill @e[type=#rb:hostile,tag=rb_mob]
+kill @e[type=arrow]
+
 kill @e[type=#rb:boss,tag=rb_boss]
 kill @e[type=item_display,tag=rb_boss_ride]
 bossbar set party_timer visible false

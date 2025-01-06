@@ -24,6 +24,7 @@ execute if score #song_select rb matches 4.. run tellraw @a [{"text": "本场个
 ,{"text": " 死亡数-","color": "white"},{"score": {"name": "*","objective": "rb_stage_death"},"color": "yellow"}]
 
 kill @e[type=#rb:hostile,tag=rb_mob]
+kill @e[type=arrow]
 tick rate 20
 
 title @a times 3 20 5
