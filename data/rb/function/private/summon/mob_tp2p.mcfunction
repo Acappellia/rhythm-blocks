@@ -1,4 +1,4 @@
-execute if predicate rb:above_surface run return run spreadplayers ~ ~ 5 15 true @s
+execute if predicate rb:above_surface run return run spreadplayers ~ ~ 3 12 true @s
 
 execute store result score #random_pos rb run random value 1..16
 execute if score #random_pos rb matches 1 run return run tp @s -18 -49 -17
