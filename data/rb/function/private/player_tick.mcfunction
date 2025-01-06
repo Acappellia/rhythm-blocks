@@ -15,3 +15,8 @@ execute if predicate rb:sneak at @s run function rb:private/move/sneak
 #kill interaction if aiming mob
 execute at @s unless entity @e[type=interaction,distance=..1,tag=rb_detector] summon interaction run function rb:private/atk/summon_interaction
 execute if predicate rb:aiming_mob at @s run kill @n[type=interaction,tag=rb_detector,distance=..1]
+
+#give resistance
+execute if score @s +health matches ..20000 run effect give @s resistance 1 0 true
+execute if score @s +health matches ..14000 run effect give @s resistance 1 1 true
+execute if score @s +health matches ..8000 run effect give @s resistance 1 2 true

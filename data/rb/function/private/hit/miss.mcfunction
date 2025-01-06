@@ -11,4 +11,3 @@ damage @s 1 generic
 scoreboard players set @s +alt_no_dmg_tick 1
 effect clear @s strength
 effect clear @s absorption
-effect give @s resistance 3 0 true
