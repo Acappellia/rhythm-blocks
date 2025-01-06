@@ -54,4 +54,4 @@ schedule clear rb:private/schedule_start/5
 schedule clear rb:private/schedule_start/6
 schedule clear rb:private/game_start
 
-execute if score #song_select rb matches 4 run schedule function rb:private/open_gate 20t replace
+execute if score #song_select rb matches 4 run schedule function rb:private/open_gate 40t replace

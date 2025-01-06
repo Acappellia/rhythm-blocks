@@ -8,6 +8,8 @@ gamerule doWardenSpawning false
 gamerule doTraderSpawning false
 gamerule disableRaids true
 gamerule doFireTick false
+gamerule commandBlockOutput false
+gamerule sendCommandFeedback false
 
 gamerule keepInventory true
 gamerule naturalRegeneration false
