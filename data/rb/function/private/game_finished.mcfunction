@@ -2,6 +2,7 @@ execute as @a at @s align xz positioned ~0.5 ~ ~0.5 run function rb:private/quit
 scoreboard players reset #rb_game rb
 effect clear @a
 effect give @a instant_health 1 9 true
+effect give @a night_vision infinite 0 true
 
 scoreboard players reset @a rb_death
 scoreboard players reset @a rb_rejoin

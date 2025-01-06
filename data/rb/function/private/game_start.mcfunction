@@ -2,6 +2,7 @@ execute as @a[gamemode=!creative,gamemode=!spectator] at @s align xz positioned 
 scoreboard players set #rb_game rb 1
 effect clear @a
 effect give @a instant_health 1 9 true
+effect give @a night_vision infinite 0 true
 scoreboard players set @a rb_input_count 0
 scoreboard players set @a rb_input_combo 0
 scoreboard players reset @a rb_death
